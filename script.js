@@ -1,5 +1,4 @@
 const allSelect = document.querySelectorAll("select");
-//const allSelect = document.getElementsByClassName("first")
 const allOption = document.querySelectorAll("option");
 const allTr = document.querySelectorAll("tr");
 const totalAllCase = document.getElementById("toTotal");
