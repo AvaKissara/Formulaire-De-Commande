@@ -1,0 +1,61 @@
+
+.box {
+    position: absolute;
+    top: 32%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+}
+.libelles-class {
+    color: white;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(153, 77, 68);
+    border: 2px solid;
+}
+
+form {
+    background-color: #e74c3c;
+    padding: 5px;
+    border-radius: 25px;
+    width: fit-content;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px 8px;    
+    text-align: center;
+}
+
+select {
+    background-color: #fdfbf9;
+    color: rgb(153, 77, 68);
+    font-weight: 500;
+    padding: 3.9px;
+    width: 210px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 4px 15px rgba(10, 10, 10, 0.2);
+} 
+
+input {
+    background-color: #fdf8f3; 
+    padding: 4px;
+}
+
+span {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+.total {
+    color: white;
+    padding-top: 10px;
+}
+
+  
