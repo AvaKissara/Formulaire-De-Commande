@@ -92,6 +92,16 @@ for (i=0; i<allQut.length; i++)
 
 for (i=0; i<allTLine.length; i++)
 {
+    allQut[i].addEventListener("focusin", function(){
+        if (this.value == 0) 
+        { 
+            this.value = ''; 
+        }
+    });
+}
+
+for (i=0; i<allTLine.length; i++)
+{
     allQut[i].addEventListener("focusout", function(){
         calcToTotal();
     });
