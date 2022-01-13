@@ -18,6 +18,37 @@ var infoArticle = [
 ];
 
 
+function remplirForm()
+{
+    for (j=0; j<3; j++)
+        {
+            inputSelect[j].value = infoArticle[j][index];
+        }
+}
+
+function calcTotalLigne()
+{
+    total = elementQuantite * elementPrixUnitaire;
+    elementTotal.value = total; 
+
+    return total;
+}
+
+function calcToTotal()
+{
+    for (k=0; k<allTLine.length; k++)
+    {
+        if (allTLine[k].value != "")
+        {
+            sum = parseInt(sum) + parseInt(allTLine[k].value);
+            toTotalCase.value = sum;           
+        }      
+    }
+    sum = 0;  
+}
+
+
+//La ligne est remplie en fonction du bouton select utilisé
 for (i=0; i<allSelect.length; i++)
 {         
     allSelect[i].addEventListener("change", function() 
@@ -33,6 +64,7 @@ for (i=0; i<allSelect.length; i++)
     }) 
 }
 
+//Le total de la ligne est calculé et affiché lorsque la quantité est modifiée
 for (i=0; i<allQut.length; i++)
 {
     allQut[i].addEventListener("change", function()   
@@ -90,6 +122,7 @@ for (i=0; i<allQut.length; i++)
     });     
 }
 
+//L'input quantité est clear lors de la 1ère saisie
 for (i=0; i<allTLine.length; i++)
 {
     allQut[i].addEventListener("focusin", function(){
@@ -100,6 +133,7 @@ for (i=0; i<allTLine.length; i++)
     });
 }
 
+//Le total des totaux est calculé et affiché lorsque la saisie de la quantité est terminée
 for (i=0; i<allTLine.length; i++)
 {
     allQut[i].addEventListener("focusout", function(){
@@ -108,31 +142,4 @@ for (i=0; i<allTLine.length; i++)
 }
 
 
-function remplirForm()
-{
-    for (j=0; j<3; j++)
-        {
-            inputSelect[j].value = infoArticle[j][index];
-        }
-}
 
-function calcTotalLigne()
-{
-    total = elementQuantite * elementPrixUnitaire;
-    elementTotal.value = total; 
-
-    return total;
-}
-
-function calcToTotal()
-{
-    for (k=0; k<allTLine.length; k++)
-    {
-        if (allTLine[k].value != "")
-        {
-            sum = parseInt(sum) + parseInt(allTLine[k].value);
-            toTotalCase.value = sum;           
-        }      
-    }
-    sum = 0;  
-}
