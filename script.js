@@ -15,7 +15,6 @@ var infoArticle = [
     [0, 1233, 3455, 5677, 7899, 1111, 6666],
     [0, 0, 0, 0, 0, 0, 0],
     [0, 10, 20, 30, 2, 11, 15],
-    [0, 0, 0, 0, 0, 0, 0],
 ];
 
 
@@ -30,7 +29,6 @@ for (i=0; i<allSelect.length; i++)
         var trSelect = elementSelect.parentNode.parentNode;  
         inputSelect = trSelect.getElementsByTagName("input");
         
-
         remplirForm();                    
     }) 
 }
@@ -123,7 +121,6 @@ function calcToTotal()
         if (allTLine[k].value != "")
         {
             sum = parseInt(sum) + parseInt(allTLine[k].value);
-            console.log(sum);
             toTotalCase.value = sum;           
         }      
     }
