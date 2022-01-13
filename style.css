@@ -45,6 +45,11 @@ input {
     padding: 4px;
 }
 
+input[type="text"], [type="number"]:disabled {
+    background: rgb(92, 49, 49);
+    color: white;
+}
+
 span {
     color: white;
     font-size: 22px;
