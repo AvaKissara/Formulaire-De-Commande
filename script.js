@@ -15,15 +15,16 @@ var infoArticle = [
     [0, 1233, 3455, 5677, 7899, 1111, 6666],
     [0, 0, 0, 0, 0, 0, 0],
     [0, 10, 20, 30, 2, 11, 15],
+    [0, 0, 0, 0, 0, 0, 0],
 ];
 
 
 function remplirForm()
 {
-    for (j=0; j<3; j++)
-        {
-            inputSelect[j].value = infoArticle[j][index];
-        }
+    for (j=0; j<4; j++)
+    { 
+        inputSelect[j].value = infoArticle[j][index];
+    }
 }
 
 function calcTotalLigne()
@@ -38,17 +39,25 @@ function calcToTotal()
 {
     for (k=0; k<allTLine.length; k++)
     {
-        if (allTLine[k].value != "")
+        if (allTLine[k].value !== "")
         {
             sum = parseInt(sum) + parseInt(allTLine[k].value);
-            toTotalCase.value = sum;           
+            toTotalCase.value = sum; 
         }      
     }
     sum = 0;  
 }
 
+function reset()
+{
+    if (index == 0)
+    {
+        calcToTotal();
+    }
+}
 
-//La ligne est remplie en fonction du bouton select utilisé
+//La ligne est remplie en fonction du bouton select utilisé. 
+//Si l'option par défaut est sélectionnée, la ligne est remise à zéro et le total recalculé. 
 for (i=0; i<allSelect.length; i++)
 {         
     allSelect[i].addEventListener("change", function() 
@@ -58,9 +67,11 @@ for (i=0; i<allSelect.length; i++)
 
         var elementSelect = document. getElementById(selectId);
         var trSelect = elementSelect.parentNode.parentNode;  
-        inputSelect = trSelect.getElementsByTagName("input");
-        
-        remplirForm();                    
+        inputSelect = trSelect.getElementsByTagName("input");       
+
+        remplirForm();  
+
+        reset();
     }) 
 }
 
@@ -116,9 +127,8 @@ for (i=0; i<allQut.length; i++)
         }
         elementTotal = document.getElementById(pTotalId);
         elementQuantite = document.getElementById(qutId).value;
-        elementPrixUnitaire = document.getElementById(pUnitId).value;
-        
-        calcTotalLigne();            
+        elementPrixUnitaire = document.getElementById(pUnitId).value;      
+        calcTotalLigne();      
     });     
 }
 

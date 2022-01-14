@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
-	line-height: 1.7;
+	line-height: 1.9;
 	overflow-x: hidden;
 }
 .box {
@@ -42,10 +42,11 @@ table {
 }
 
 select {
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(220, 219, 235);
     color: rgb(20, 19, 34);
     font-weight: 500;
-    padding: 3.9px;
+    padding: 4px;
     width: 280px;
     font-size: 15px;
 } 
