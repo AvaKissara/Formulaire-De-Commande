@@ -1,150 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta id="viewport" content="width=device-width, initial-scale=1.0">
-		<title>LE FORMULAIRE DE COMMANDE</title>
-		
-		<link rel="stylesheet" href="style.css">
-	</head>
-	
-	<body>
-		<div class="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>LE FORMULAIRE DE COMMANDE</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
             <h1>Formulaire de Prise de commande</h1>
-            <div class="box">
-                <form method="GET">
-                    <table id="formulaireCommande">
-                        <thead>
-                            <tr id="libelles" class="libelles-class">
-                                <th>Libellé</th>
-                                <th>Référence</th>
-                                <th>Quantité</th>
-                                <th>Prix unitaire</th>
-                                <th>Prix</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <select id="livre1" class="first">
-                                        <option>Choisissez votre livre</option>
-                                        <option>Le grand livre de Javascript</option>
-                                        <option>HTML encore plus vite</option>
-                                        <option>Windows NT4.0</option>
-                                        <option>Le Kit de Ressource technique de NT</option>
-                                        <option>Formation Java</option>
-                                        <option>Comment créer son site Web</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" id="ref1" disabled="disabled"></input></td>
-                                <td><input type="number" id="qut1" class="quantite"></input></td>
-                                <td><input type="text" id="pu1" disabled="disabled"></input></td>
-                                <td><input type="text" id="p1" class="totLine" disabled="disabled"></input></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select id="livre2" class="first">
-                                        <option>Choisissez votre livre</option>
-                                        <option>Le grand livre de Javascript</option>
-                                        <option>HTML encore plus vite</option>
-                                        <option>Windows NT4.0</option>
-                                        <option>Le Kit de Ressource technique de NT</option>
-                                        <option>Formation Java</option>
-                                        <option>Comment créer son site Web</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" id="ref2" disabled="disabled"></input></td>
-                                <td><input type="number" id="qut2" class="quantite"></input></td>
-                                <td><input type="text" id="pu2" disabled="disabled"></input></td>
-                                <td><input type="text" id="p2" class="totLine" disabled="disabled"></input></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select id="livre3" class="first">
-                                        <option>Choisissez votre livre</option>
-                                        <option>Le grand livre de Javascript</option>
-                                        <option>HTML encore plus vite</option>
-                                        <option>Windows NT4.0</option>
-                                        <option>Le Kit de Ressource technique de NT</option>
-                                        <option>Formation Java</option>
-                                        <option>Comment créer son site Web</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" id="ref3 " disabled="disabled"></input></td>
-                                <td><input type="number" id="qut3" class="quantite"></input></td>
-                                <td><input type="text" id="pu3" disabled="disabled"></input></td>
-                                <td><input type="text" id="p3" class="totLine" disabled="disabled"></input></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select id="livre4" class="first">
-                                        <option>Choisissez votre livre</option>
-                                        <option>Le grand livre de Javascript</option>
-                                        <option>HTML encore plus vite</option>
-                                        <option>Windows NT4.0</option>
-                                        <option>Le Kit de Ressource technique de NT</option>
-                                        <option>Formation Java</option>
-                                        <option>Comment créer son site Web</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" id="ref4" disabled="disabled"></input></td>
-                                <td><input type="number" id="qut4" class="quantite"></input></td>
-                                <td><input type="text" id="pu4" disabled="disabled"></input></td>
-                                <td><input type="text" id="p4" class="totLine" disabled="disabled"></input></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select id="livre5" class="first">
-                                        <option>Choisissez votre livre</option>
-                                        <option>Le grand livre de Javascript</option>
-                                        <option>HTML encore plus vite</option>
-                                        <option>Windows NT4.0</option>
-                                        <option>Le Kit de Ressource technique de NT</option>
-                                        <option>Formation Java</option>
-                                        <option>Comment créer son site Web</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" id="ref5" disabled="disabled"></input></td>
-                                <td><input type="number" id="qut5" class="quantite"></input></td>
-                                <td><input type="text" id="pu5" disabled="disabled"></input></td>
-                                <td><input type="text" id="p5" class="totLine" disabled="disabled"></input></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <select id="livre6" class="first">
-                                        <option>Choisissez votre livre</option>
-                                        <option>Le grand livre de Javascript</option>
-                                        <option>HTML encore plus vite</option>
-                                        <option>Windows NT4.0</option>
-                                        <option>Le Kit de Ressource technique de NT</option>
-                                        <option>Formation Java</option>
-                                        <option>Comment créer son site Web</option>
-                                    </select>
-                                </td>
-                                <td><input type="text" id="ref6" disabled="disabled"></input></td>
-                                <td><input type="number" id="qut6" class="quantite"></input></td>
-                                <td><input type="text" id="pu6" disabled="disabled"></input></td>
-                                <td><input type="text" id="p6" class="totLine" disabled="disabled"></input></td>
-                            </tr>                                          
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td class="total">
-                                    <span>Total<br> 
-                                        <input type="text" id ="toTotal" disabled="disabled"></input>
-                                    </span>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </form>
+        </header>
+
+        <form method="GET" class="box">
+            <div class="libelle">
+                <div>Articles</div>
+                <div>Réf</div>
+                <div>Quantité</div>
+                <div>P. Unit</div>
+                <div>Prix</div>
+            </div>
+
+            <div id="u-interface" class="interface-u"> 
+                <div class="grand-total">
+                    <span>Total</span>
+                    <input type="text" id ="toTotal" disabled="disabled">                 
                 </div>
-			</div>
-		    <script src="script.js"></script>
-		</div>
-    </body>
+            </div>
+
+            <div class="ajouter-ligne">
+                <input type="button" class="button-add" role="button" id="button-new" value="+">         
+            </div>
+
+        </form>
+
+        <script src="script.js"></script>
+    </div>
+</body>
 </html>
