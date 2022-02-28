@@ -45,6 +45,10 @@
     padding-right: 75px;
 }
 
+.interface-u {
+    padding-left: 30px;
+}
+
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -68,6 +72,7 @@ input {
     background-color: rgb(220, 219, 235);
     padding: 4px;
     font-weight: bold;
+    text-align: right;
 }
 
 input[type="text"], [type="number"]{
@@ -108,6 +113,7 @@ span {
 
 #toTotal {
     font-weight: bolder;
+    width: 10%;
 }
 
 .button-add {
